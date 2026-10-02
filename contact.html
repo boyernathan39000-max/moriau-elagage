@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devis gratuit — Moriau élagage, Ouroux-sur-Saône</title>
+<meta name="description" content="Demandez votre devis gratuit au 07 77 31 10 32 ou par le formulaire. Du lundi au samedi de 8 h à 18 h. Déplacement gratuit.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Devis gratuit — Moriau élagage, Ouroux-sur-Saône">
+<meta property="og:description" content="Demandez votre devis gratuit au 07 77 31 10 32 ou par le formulaire. Du lundi au samedi de 8 h à 18 h. Déplacement gratuit.">
+<meta property="og:image" content="assets/img/hero-nacelle.webp">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="assets/logo/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/tokens.css?v=f122d2f7">
+<link rel="stylesheet" href="css/base.css?v=64ca1773">
+<link rel="stylesheet" href="css/layout.css?v=60f12857">
+<link rel="stylesheet" href="css/components.css?v=58f9e634">
+<link rel="stylesheet" href="css/pages.css?v=31c4f749">
+<link rel="stylesheet" href="css/apparitions.css?v=08bc9de2">
+<link rel="stylesheet" href="css/moriau.css?v=20dde512">
+<script>
+(function () {
+  var r = document.documentElement;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  r.dataset.anim = 'oui';
+  addEventListener('load', function () {
+    setTimeout(function () {
+      if (!r.dataset.animPrete) r.removeAttribute('data-anim');
+    }, 1000);
+  });
+})();
+</script>
+</head>
+<body>
+<a class="evitement" href="#principal">Aller au contenu</a>
+
+<header class="entete" id="entete" data-fond="clair">
+  <div class="entete__interieur">
+    <a class="marque" href="index.html" aria-label="Moriau élagage, accueil">
+      <span class="marque__signe marque__arbre" aria-hidden="true"></span>
+      <span class="marque__nom">Moriau élagage</span>
+    </a>
+
+    <nav class="nav" id="menu" aria-label="Navigation principale">
+      <a class="nav__lien" href="index.html">Accueil</a>
+      <a class="nav__lien" href="services.html">Prestations</a>
+      <a class="nav__lien" href="realisations.html">Réalisations</a>
+      <a class="nav__lien" href="contact.html" aria-current="page">Contact</a>
+      <div class="nav__action"><a class="bouton bouton--plein bouton--large" href="contact.html">Devis gratuit</a></div>
+    </nav>
+
+    <div class="entete__action">
+      <a class="bouton bouton--entete" href="contact.html">Devis gratuit</a>
+    </div>
+
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <span class="burger__trait"></span><span class="burger__trait"></span><span class="burger__trait"></span>
+    </button>
+  </div>
+</header>
+
+<main id="principal">
+
+<section class="hero-page">
+  <div class="contenu">
+    <p class="badge badge--accent hero-page__badge">Devis gratuit</p>
+    <h1 class="hero-page__titre"><span class="surligne">Contactez-nous</span></h1>
+    <p class="hero-page__texte">Devis et déplacement gratuits. <a href="tel:+33777311032">07 77 31 10 32</a></p>
+  </div>
+</section>
+
+<section class="section section--creme section--haut-nul" id="formulaire">
+  <div class="contenu">
+    <div class="formulaire-bloc formulaire-bloc--clair">
+      <img class="visuel-photo visuel--pleine" src="assets/img/contact-fond.webp"
+           width="1600" height="1200" fetchpriority="high"
+           alt="Utilitaire et remorque de Moriau élagage sur un chantier.">
+
+      <form class="formulaire" id="devis" novalidate>
+        <div class="formulaire__corps">
+          <h2 class="formulaire__titre">Votre demande</h2>
+
+          <div class="champs">
+            <div class="champ champ--plein">
+              <label for="nom">Nom <span aria-hidden="true">*</span></label>
+              <input type="text" id="nom" name="nom" autocomplete="name" required aria-describedby="err-nom">
+              <p class="champ__erreur" id="err-nom">Indiquez votre nom.</p>
+            </div>
+
+            <div class="champ">
+              <label for="telephone">Téléphone portable <span aria-hidden="true">*</span></label>
+              <input type="tel" id="telephone" name="telephone" autocomplete="tel" required aria-describedby="err-telephone">
+              <p class="champ__erreur" id="err-telephone">Indiquez un numéro à dix chiffres pour qu'on puisse vous rappeler.</p>
+            </div>
+
+            <div class="champ">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+
+            <div class="champ">
+              <label for="commune">Adresse ou commune du chantier <span aria-hidden="true">*</span></label>
+              <input type="text" id="commune" name="commune" autocomplete="address-level2" required aria-describedby="err-commune">
+              <p class="champ__erreur" id="err-commune">Indiquez la commune du chantier.</p>
+            </div>
+
+            <div class="champ">
+              <label for="projet">Prestation <span aria-hidden="true">*</span></label>
+              <select id="projet" name="projet" required aria-describedby="err-projet">
+                <option value="">Choisissez</option>
+                <option>Élagage, abattage</option>
+                <option>Dessouchage</option>
+                <option>Taille de haie</option>
+                <option>Taille d'arbustes ou de fruitiers</option>
+                <option>Tonte, débroussaillage</option>
+                <option>Clôture, grillage</option>
+                <option>Aménagement paysager</option>
+                <option>Contrat d'entretien</option>
+                <option>Autre</option>
+              </select>
+              <p class="champ__erreur" id="err-projet">Choisissez une prestation, même approximative.</p>
+            </div>
+
+            <div class="champ champ--plein">
+              <label for="description">Votre message <span aria-hidden="true">*</span></label>
+              <textarea id="description" name="description" required minlength="10" aria-describedby="err-description"
+                        placeholder="Décrivez les travaux en une phrase."></textarea>
+              <p class="champ__erreur" id="err-description">Une phrase suffit pour décrire les travaux.</p>
+            </div>
+          </div>
+
+          <div class="formulaire__pied">
+            <p class="formulaire__mention">Devis gratuit · déplacement gratuit.</p>
+            <button class="bouton bouton--plein" type="submit">Envoyer la demande</button>
+          </div>
+        </div>
+
+        <div class="formulaire__succes" role="status" aria-live="polite">
+          <div class="formulaire__succes-signe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+          </div>
+          <h3>Demande enregistrée</h3>
+          <p id="succes-detail">Merci, nous revenons vers vous pour votre devis gratuit.</p>
+          <p style="margin-block-start: var(--sp-8)">
+            <button class="bouton bouton--contour" type="button" id="nouvelle-demande">Faire une autre demande</button>
+          </p>
+        </div>
+      </form>
+
+      <aside class="pratique">
+        <h2 class="pratique__titre">Nous joindre</h2>
+        <div class="pratique__liste">
+          <div class="pratique__item">
+            <p class="pratique__intitule">Téléphone</p>
+            <p class="pratique__valeur"><a href="tel:+33777311032">07 77 31 10 32</a></p>
+          </div>
+          <div class="pratique__item">
+            <p class="pratique__intitule">Horaires</p>
+            <p class="pratique__valeur">Lundi – samedi, 8 h – 18 h</p>
+          </div>
+          <div class="pratique__item">
+            <p class="pratique__intitule">Adresse</p>
+            <p class="pratique__valeur">Ouroux-sur-Saône et Pourlans</p>
+          </div>
+          <div class="pratique__item">
+            <p class="pratique__intitule">Avis Google</p>
+            <p class="pratique__valeur"><a class="pratique__avis" href="https://maps.google.com/?cid=16493778770294044603" target="_blank" rel="noopener"><span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span><span>4,9/5 · 47 avis</span></a></p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sombre">
+  <div class="contenu">
+    <div class="recherche">
+      <p class="surtitre">Zone d'intervention</p>
+      <h2 class="recherche__titre">Intervenez-vous <span class="surligne">chez moi</span>&nbsp;?</h2>
+      <p class="section-chapo">Saône-et-Loire, Jura, Côte-d'Or.</p>
+
+      <div class="recherche__champ">
+        <label class="visuellement-cache" for="champ-commune">Votre commune</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="text" id="champ-commune" placeholder="Votre commune" autocomplete="off">
+      </div>
+
+      <p class="recherche__reponse" id="reponse-commune" role="status" aria-live="polite"></p>
+
+      <div class="communes">
+        <span class="commune">Ouroux-sur-Saône</span>
+        <span class="commune">Pourlans</span>
+        <span class="commune">Chalon-sur-Saône</span>
+        <span class="commune">Saint-Germain-du-Plain</span>
+        <span class="commune">Saint-Marcel</span>
+        <span class="commune">Seurre</span>
+        <span class="commune">Crissey</span>
+        <span class="commune">Varennes-le-Grand</span>
+        <span class="commune">Épervans</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="contenu">
+    <div class="section-entete section-entete--centre">
+      <p class="badge badge--accent">4,9/5 · 47 avis Google</p>
+      <h2 class="section-titre">Ils nous ont <span class="surligne">contactés</span></h2>
+    </div>
+    </div>
+    <div class="avis-bande" role="region" aria-label="Avis Google de nos clients">
+      <div class="avis-bande__piste">
+        <div class="avis-bande__groupe">
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Excellent travail ! Monsieur Moriau est intervenu chez moi et le résultat est impeccable. Travail très soigné, arbres parfaitement taillés et chantier laissé propre après son passage. Professionnel, ponctuel et de bon conseil. Je suis vraiment très satisfait du rendu et je recommande sans hésiter. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">DC</span>
+              <span><strong>Dylan C.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très satisfait, de la prise de rendez-vous pour le devis, à la réalisation de l'élagage de mon mirabellier. Prix correct, travail soigné et chantier nettoyé. Avec en prime de précieux conseils. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">SP</span>
+              <span><strong>Steve P.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Travail impeccable réalisé par M. Moriau, également très sympathique. Tarifs et délai de réalisation très raisonnables. Je recommande vivement cette entreprise. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CC</span>
+              <span><strong>Charlotte C.</strong><br><span>Avis Google · il y a 3 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Un grand merci à l'entreprise Moriau Élagage, une super équipe vraiment à l'écoute du client, très professionnelle. L'entreprise Moriau Élagage est intervenue chez moi pour l'abattage d'un sapin et la taille d'une haie de cyprès. Je suis entièrement satisfait des travaux effectués, je recommande à 100 %. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">LA</span>
+              <span><strong>Lorenzo A.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très bonne prestation, travail soigné, très professionnelle et chantier laissé propre. Je recommande sans hésitation. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">WK</span>
+              <span><strong>Wyatt K.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très réactif à la demande de devis, travail soigné, prix correct, je recommande ! »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 7 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Les travaux demandés ont été respectés, équipe souriante et professionnelle. Je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 6 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« J'ai fait récemment appel à Monsieur Moriau, très satisfait du résultat. Travail soigné, personne très discrète et polie. Je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Entreprise très sérieuse et prix raisonnable, je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">K</span>
+              <span><strong>Kevin</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+        </div>
+        <div class="avis-bande__groupe" aria-hidden="true">
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Excellent travail ! Monsieur Moriau est intervenu chez moi et le résultat est impeccable. Travail très soigné, arbres parfaitement taillés et chantier laissé propre après son passage. Professionnel, ponctuel et de bon conseil. Je suis vraiment très satisfait du rendu et je recommande sans hésiter. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">DC</span>
+              <span><strong>Dylan C.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très satisfait, de la prise de rendez-vous pour le devis, à la réalisation de l'élagage de mon mirabellier. Prix correct, travail soigné et chantier nettoyé. Avec en prime de précieux conseils. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">SP</span>
+              <span><strong>Steve P.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Travail impeccable réalisé par M. Moriau, également très sympathique. Tarifs et délai de réalisation très raisonnables. Je recommande vivement cette entreprise. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CC</span>
+              <span><strong>Charlotte C.</strong><br><span>Avis Google · il y a 3 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Un grand merci à l'entreprise Moriau Élagage, une super équipe vraiment à l'écoute du client, très professionnelle. L'entreprise Moriau Élagage est intervenue chez moi pour l'abattage d'un sapin et la taille d'une haie de cyprès. Je suis entièrement satisfait des travaux effectués, je recommande à 100 %. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">LA</span>
+              <span><strong>Lorenzo A.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très bonne prestation, travail soigné, très professionnelle et chantier laissé propre. Je recommande sans hésitation. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">WK</span>
+              <span><strong>Wyatt K.</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Très réactif à la demande de devis, travail soigné, prix correct, je recommande ! »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 7 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Les travaux demandés ont été respectés, équipe souriante et professionnelle. Je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 6 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« J'ai fait récemment appel à Monsieur Moriau, très satisfait du résultat. Travail soigné, personne très discrète et polie. Je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">CG</span>
+              <span><strong>Client Google</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+          <figure class="carte avis-carte">
+            <span class="etoiles" role="img" aria-label="5 étoiles sur 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9z"/></svg></span>
+            <blockquote class="avis-carte__texte">« Entreprise très sérieuse et prix raisonnable, je recommande. »</blockquote>
+            <figcaption class="avis-carte__auteur"><span class="pastille" aria-hidden="true">K</span>
+              <span><strong>Kevin</strong><br><span>Avis Google · il y a 9 mois</span></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="contenu">
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="contenu contenu--etroit">
+    <div class="section-entete section-entete--centre">
+      <p class="surtitre">Questions fréquentes</p>
+      <h2 class="section-titre">Vos <span class="surligne">questions</span></h2>
+    </div>
+
+    <div class="faq">
+      <div class="faq__element" data-ouvert="true">
+        <h3>
+          <button class="faq__bouton" type="button" aria-expanded="true" aria-controls="faq-1">
+            Quels sont vos horaires d'ouverture ?
+            <span class="faq__signe" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq__reponse" id="faq-1"><div><p>Nous sommes ouverts du lundi au samedi de 8 h à 18 h.</p></div></div>
+      </div>
+
+      <div class="faq__element">
+        <h3>
+          <button class="faq__bouton" type="button" aria-expanded="false" aria-controls="faq-2">
+            Proposez-vous des contrats d'entretien régulier ?
+            <span class="faq__signe" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq__reponse" id="faq-2"><div><p>Oui, nous proposons des contrats d'entretien personnalisés pour répondre à vos besoins.</p></div></div>
+      </div>
+
+      <div class="faq__element">
+        <h3>
+          <button class="faq__bouton" type="button" aria-expanded="false" aria-controls="faq-3">
+            Comment puis-je obtenir un devis gratuit ?
+            <span class="faq__signe" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq__reponse" id="faq-3"><div><p>Par téléphone au 07 77 31 10 32 ou avec le formulaire de cette page.</p></div></div>
+      </div>
+
+      <div class="faq__element">
+        <h3>
+          <button class="faq__bouton" type="button" aria-expanded="false" aria-controls="faq-4">
+            Le déplacement est-il payant ?
+            <span class="faq__signe" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="faq__reponse" id="faq-4"><div><p>Non, le déplacement est gratuit, tout comme le devis.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--creme section--haut-nul" id="informations-legales">
+  <div class="contenu contenu--etroit">
+    <div class="legal">
+      <h2>Informations légales</h2>
+      <p>Moriau élagage, 91 bis route de Chalon, 71370 Ouroux-sur-Saône. 07 77 31 10 32. Maquette de démonstration réalisée par OBT Agency : le formulaire n'envoie aucune donnée.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="contenu">
+    <div class="pied__haut">
+      <div>
+        <a class="marque" href="index.html" aria-label="Moriau élagage, accueil">
+      <span class="marque__signe marque__arbre" aria-hidden="true"></span>
+      <span class="marque__nom">Moriau élagage</span>
+    </a>
+        <p class="pied__accroche">Paysagiste et élagueur, de père en fils.</p>
+      </div>
+
+      <div>
+        <p class="pied__titre">Prestations</p>
+        <ul class="pied__liste">
+          <li><a href="services.html#elagage">Élagage et abattage</a></li>
+          <li><a href="services.html#haies">Taille de haies</a></li>
+          <li><a href="services.html#fruitiers">Arbustes et fruitiers</a></li>
+          <li><a href="services.html#tonte">Tonte et débroussaillage</a></li>
+          <li><a href="services.html#clotures">Clôtures et grillages</a></li>
+          <li><a href="services.html#amenagement">Aménagement paysager</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="pied__titre">Nous joindre</p>
+        <ul class="pied__liste">
+          <li><a href="tel:+33777311032">07 77 31 10 32</a></li>
+          <li>91 bis route de Chalon, 71370 Ouroux-sur-Saône</li>
+          <li>Du lundi au samedi, 8 h – 18 h</li>
+          <li>Saône-et-Loire · Jura · Côte-d'Or</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="pied__titre">Le site</p>
+        <ul class="pied__liste">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Prestations</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Devis gratuit</a></li>
+          <li><a href="https://facebook.com/share/1DsEoRvHDE/" target="_blank" rel="noopener">Facebook</a> · <a href="https://tiktok.com/@moriauelagage" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pied__bas">
+      <p>Moriau élagage — paysagiste et élagueur, Ouroux-sur-Saône (71370) et Pourlans (71270).</p>
+      <p>Maquette de démonstration · OBT Agency</p>
+    </div>
+  </div>
+</footer>
+<script src="js/apparitions.js?v=02286d6b"></script>
+<script src="js/main.js?v=93c385ca"></script>
+<script src="js/moriau.js?v=9325106b"></script>
+<script src="js/formulaire.js?v=61493b1e"></script>
+</body>
+</html>
